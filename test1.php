@@ -4,8 +4,8 @@
 <?php
   session_start();
   $fb = new Facebook\Facebook([
-  'app_id' => '{app-id}', // Replace {app-id} with your app id
-  'app_secret' => '{app-secret}',
+  'app_id' => '1108487205858532', // Replace {app-id} with your app id
+  'app_secret' => '3cf72784651bc90a584236561d5a53cf',
   ]);
 
 $helper = $fb->getRedirectLoginHelper();
@@ -47,12 +47,13 @@ $oAuth2Client = $fb->getOAuth2Client();
 $tokenMetadata = $oAuth2Client->debugToken($accessToken);
 echo '<h3>Metadata</h3>';
 var_dump($tokenMetadata);
-
 // Validation (these will throw FacebookSDKException's when they fail)
-$tokenMetadata->validateAppId({app-id}); // Replace {app-id} with your app id
+$tokenMetadata->validateAppId('1108487205858532'); // Replace {app-id} with your app id
 // If you know the user ID this access token belongs to, you can validate it here
-//$tokenMetadata->validateUserId('123');
+$tokenMetadata->validateUserId($tokenMetadata->getField("user_id"));
 $tokenMetadata->validateExpiration();
+echo "<hr />";
+var_dump($_SESSION);
 
 if (! $accessToken->isLongLived()) {
   // Exchanges a short-lived access token for a long-lived one
