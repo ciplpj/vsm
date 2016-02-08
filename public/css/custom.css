@@ -1,0 +1,63 @@
+.buy_btn{
+font-size:14px;
+padding:6px 25px !important;
+}
+
+.td_red{
+background-color: #FFF9F2 !important;
+font-weight:bold;
+font-size:20px;
+    /*opacity: 0.3;
+    filter: Alpha(opacity=30); /* IE8 and earlier */
+}
+
+.td_green{
+background-color: #F0FCF0 !important;
+font-weight:bold;
+font-size:20px;
+
+    /*opacity: 0.3;
+    filter: Alpha(opacity=30); /* IE8 and earlier */
+}
+
+.igreen
+{
+color:green !important;
+}
+
+.ired
+{
+color:red !important;
+}
+
+
+.inc_size{
+font-size:24px !important;
+}
+
+.loader_market {
+display: none; 
+width: 450px;
+position: fixed;
+top: 1%;
+left: 30%;
+text-align: center;
+z-index: 999;
+overflow: auto;
+float: left;
+}
+
+.port
+{
+font-size:16px !important;
+}
+
+.port thead th
+{
+font-size:16px !important;
+}
+
+.port tbody td
+{
+font-size:14px;
+}

@@ -1,0 +1,5 @@
+ 2016-02-08 18:46:36  | Database Access : 
+Database Query Failed : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+
+Last Sql Query: SELECT * FROM stock_holder WHERE id =  LIMIT 1 ; Time: 2016-02-08 18:46:36
+   IP Address : ::1
